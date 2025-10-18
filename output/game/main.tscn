@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1x2y3z4a5b6"]
+
+[ext_resource type="PackedScene" uid="uid://d1e2f3g4h5i6" path="res://player.tscn"]
+[ext_resource type="PackedScene" uid="uid://b7a8s9d0f1g2" path="res://platform.tscn"]
+[ext_resource type="PackedScene" uid="uid://j9k8l7m6n5o4" path="res://key.tscn"]
+[ext_resource type="PackedScene" uid="uid://p3q2r1s0t9u8" path="res://spike_trap.tscn"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_abcde")]
+position = Vector2(200, 100)
+
+[node name="Platform1" parent="." instance=ExtResource("2_fghij")]
+position = Vector2(200, 300)
+
+[node name="Platform2" parent="." instance=ExtResource("2_fghij")]
+position = Vector2(500, 400)
+
+[node name="Platform3" parent="." instance=ExtResource("2_fghij")]
+position = Vector2(800, 500)
+
+[node name="Key" parent="." instance=ExtResource("3_klmno")]
+position = Vector2(800, 450)
+
+[node name="SpikeTrap" parent="." instance=ExtResource("4_pqrst")]
+position = Vector2(500, 350)

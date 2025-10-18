@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://p3q2r1s0t9u8"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(50, 20)
+
+[node name="SpikeTrap" type="Area2D"]
+groups=["spike_trap"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -25
+offset_top = -10
+offset_right = 25
+offset_bottom = 10
+color = Color(0.5, 0.5, 0.5, 1)
